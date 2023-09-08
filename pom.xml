@@ -17,6 +17,7 @@
     <description>优惠券父项目</description>
     <modules>
         <module>coupon-template-serv</module>
+        <module>coupon-calculation-serv</module>
     </modules>
     <packaging>pom</packaging>
 
