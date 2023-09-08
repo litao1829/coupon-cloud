@@ -49,6 +49,6 @@ public interface CouponTemplateDao extends JpaRepository<CouponTemplate, Long> {
      * @return {@link Integer}
      */
     @Modifying
-    @Query("update CouponTemplate c set c.available = 0 where c.id = :id")
+    @Query(value = "update coupon_template c set c.available = 0 where c.id = :id",nativeQuery = true)
     int makeCouponUnavailable(@Param("id") Long id);
 }
