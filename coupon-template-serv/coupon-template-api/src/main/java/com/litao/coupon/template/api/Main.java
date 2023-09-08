@@ -1,4 +1,4 @@
-package com.litao;
+package com.litao.coupon.template.api;
 
 public class Main {
     public static void main(String[] args) {
