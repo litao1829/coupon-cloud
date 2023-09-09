@@ -122,7 +122,7 @@ public class CouponCustomerServiceImpl implements CouponCustomerService {
         }
 
         // 用户领券数量超过上限
-        long count = couponDao.countByUserIdAAndTemplateId(request.getUserId(), request.getCouponTemplatedId());
+        long count = couponDao.countByUserIdAndTemplateId(request.getUserId(), request.getCouponTemplatedId());
         if (count >= templateInfo.getRule().getLimitation()) {
             log.error("exceeds maximum number");
             throw new IllegalArgumentException("exceeds maximum number");
