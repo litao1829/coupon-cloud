@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * 在CouponTemplateInfo基础上在封装一层————优惠卷信息
+ * 封装优惠卷信息
  */
 
 @Data
